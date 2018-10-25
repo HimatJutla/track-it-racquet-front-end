@@ -7,6 +7,9 @@ import { CommonModule } from '@angular/common';
 //import { AuthenticationContainerComponent } from './containers/auth-container.component';
 // import { AuthenticationService } from "src/app/authentication/authentication.service";
 import { Routes, RouterModule } from "@angular/router";
+import { SharedModule } from "src/app/shared/shared.module";
+
+import { DashboardContainerComponent } from "src/app/dashboard/containers/dashboard-container/dashboard-container.component";
 
 
 
@@ -16,6 +19,7 @@ import { Routes, RouterModule } from "@angular/router";
 
 
 export const COMPONENTSandPIPES = [
+    DashboardContainerComponent
   //AuthenticationContainerComponent
 ];
 
@@ -37,6 +41,7 @@ export const COMPONENTSandPIPES = [
     HttpModule,
     FormsModule,
     CommonModule,
+    SharedModule
     //  RouterModule.forChild(ROUTES)
     // StoreModule.forFeature('asteroids', reducers),
     // EffectsModule.forFeature(effects),
